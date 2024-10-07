@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* Navagation Bar (Drop Down Menu) Function */
+.navbar {
+  overflow: hidden;
+  background-color: #191919d3;
+  margin-top: 0px; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* A Stylized box to put text in */
+.box1{
+    width: 70%;
+    border: 0px solid black;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding:0px; font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Stylize Background of Page */
+body {
+  background-color: rgb(255, 255, 255);
+  background-image:                     /* Establish Background Image */
+      url('Shoe5.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw 363px;         /* Set the size of the background image */
+  background-position: center top;      /* Center the image in the viewport */
+  height: auto;                         /* Auto size the webpage to fit contents */
+  position: relative;                   
+ }
+ 
+/* An Optional Black Box for Stylization Purposes */
+.black-box {  
+    background-color: rgba(0, 0, 0, 0.951);   
+    height: 300px;                             
+    width: 100%;                                
+}
+
+
+/* Underline Style */
+.underline {
+    text-decoration: underline;
+}
+
+
+/* Image Gallery Setup*/
+
+.gallery_container {
+  display: flex;
+  justify-content: center;  /* Center the gallery boxes */
+  align-items: flex-start;
+  margin-top: 20px;
+  flex-wrap: wrap           /* Wrap to next line when gallery boxes reach edge of webpage*/
+}
+    /* Establish Style for each Gallery Box */
+div.gallery_box {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+}
+    /* Optional Style feature when hovering over box */
+div.gallery_box:hover {
+  border: 1px solid #01d3f4;
+}
+    /* Image properties within box */
+div.gallery_box img {
+  width: 100%;
+  height: auto;
+}
+    /* Text properties within box */
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+</style>
+
+
+
+<!-- BODY of Webpage ---------------------------------------------------------------------------------------------------->
+</head>
+
+<h1 style="font-size: 20px; color: white;">Epslion 3</h1>
+<h2 style="text-align: center; font-size: 100px; color: white; text-shadow: 2px 2px 5px black;">J-Flys</h2>
+
+
+<!-- Call and Customize the navbar Function -->
+<div class="navbar">
+    <a href="index.html">Home</a>
+</div>
+
+<p style="font-size: 40px; text-shadow: 2px 2px 5px rgb(196, 196, 196);text-align: center;">
+    <b>OUR STOCK:</b></p>
+<p style="font-size: 20px;text-align: center; margin-top: -40px;">
+    <br>Below are images of the styles we offer.<br>If interested in purchasing, reach out to our email at 
+    <span class="underline">e3Jfly@gmail.com</span></p>
+
+
+
+<!-- Table of Stock Image Elements for Shoes and Pricing -->
+<div class="gallery_container">
+    <div class="gallery_box">
+        <img src="Style1.jpg">
+        <div class="desc"> Silver-Flys<br><b>$59.99</b></div>
+    </div>
+    
+    <div class="gallery_box">
+        <img src="Style2.jpg">
+        <div class="desc">Rainbow-Rows<br><b>$109.99</b></div>
+    </div>
+    
+    <div class="gallery_box">
+        <img src="Style3.jpg">
+        <div class="desc">Cottons Candy<br><b>$49.99</b></div>
+    </div>
+
+    <div class="gallery_box">
+        <img src="Style4.jpg">
+        <div class="desc">Green Arrows<br><b>$89.99</b></div>
+    </div>
+
+    <div class="gallery_box">
+        <img src="Style5.jpg">
+        <div class="desc">Blue Skys<br><b>$89.99</b></div>
+    </div>
+
+    <div class="gallery_box">
+        <img src="Style6.jpg">
+        <div class="desc"> Electic-Flys<br><b>$174.99</b></div>
+    </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- Insert Black Box (For Stylization Purposes) -->
+<br><br><br>
+<div class="black-box"></div> 
+  

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* Navagation Bar (Drop Down Menu) Function */
+
+.navbar {
+  overflow: hidden;
+  background-color: #191919d3;
+  margin-top: 0px; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* Box1 For Text */
+ .box1{
+            width: 70%;
+            border: 0px solid black;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            padding:0px; font-size:20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+/* Automatic Image transition  */
+       
+ img {
+            height: auto;  /* Keeps the aspect ratio intact */
+            display: block; /* Make images block elements */
+            margin: 0 auto; /* Center images */
+        }
+
+        .slideshow-container {
+            max-width: 1000px; /* Limit width of slideshow */
+            position: relative;
+            margin: auto; /* Center the container */
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active {
+        background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+}
+
+/* Stylize Background of Page */
+body {
+  background-color: rgb(255, 255, 255);
+  background-image:                     /* Establish Background Image */
+      url('Shoe5.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw 363px;         /* Set the size of the background image */
+  background-position: center top;      /* Center the image in the viewport */
+  height: auto;                         /* Auto size the webpage to fit contents */
+  position: relative;                   
+ }
+ 
+/* An Optional Black Box for Stylization Purposes */
+.black-box {  
+    background-color: rgba(0, 0, 0, 0.951); 
+    height: 300px; 
+    width: 100%; 
+}
+
+</style>
+
+
+
+<!-- BODY of Webpage ---------------------------------------------------------------------------------------------------->
+</head>
+ 
+<!-- Title Text -->
+<h1 style="font-size: 20px; color: white;">Epslion 3</h1>
+<h2 style="text-align: center; font-size: 100px; color: white; text-shadow: 2px 2px 5px black;">J-Flys</h2>
+
+
+<!-- Call and Customize the navbar Function -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="NewsPage.html">News</a>
+  <div class="dropdown">                        <!--Insert Drop Down Function within Navbar Function-->
+    <button class="dropbtn">Menu 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#features">Features</a>          <!--Links to Established ID "features" in the same page-->
+      <a href="StylesPricingPage.html">Styles & Pricing</a>
+    </div>
+  </div> 
+</div>
+
+
+ <!-- Utilize the Slide Show Feature -->
+ <div class="slideshow-container" style="margin-top: 20px;"> 
+    
+    <div class="mySlides fade">
+        <img src="Shoe9_612x612.jpg"style="width:1000px; height:350px">
+    </div>
+    
+    <div class="mySlides fade">
+        <img src="Shoe10_612x612.jpg"style="width:1000px; height:350px">
+    </div>
+    
+    <div class="mySlides fade">
+        <img src="Shoe11_612x612.jpg" style="width:1000px; height:350px">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+
+
+    <!-- Display Set of Text Using Stylization Box1 -->
+    <div class="box1">
+
+      <!-- Description Section of text -->
+      <p style="font-size: 40px; text-shadow: 2px 2px 5px rgb(196, 196, 196); text-align: center;"><b>DESCRIPTION</b></p>
+      <p style="font-size: 20px; line-height: 1.6;">
+        The J-Flys are Epsilon-3's new and improved shoe allowing you to achieve greater speeds and heights. Our latest 
+        model gives our users the ability to run faster, jump higher, and achieve hover mobility. 
+        From the data we collected, this shoe may result in jumps 20% higher then you normally could and enable 
+        users to reach running speeds of up to 30mph. Additionally, with new feather improved technology, the J-Flys allow for short 
+        flight durration. Users will be able to use the flight technology to hover over the air, glide down from heights, and give that
+        extra needed jump boost to score that slam dunk.<br>   
+      </p>
+
+
+      <!-- Features Section of text -->
+          <!-- Note: Established a Linked ID for the Features section Button -->
+      <p style="font-size: 40px; text-shadow: 2px 2px 5px rgb(196, 196, 196);text-align: center;" id="features"><b>FEATURES</b></p>
+          <!-- Insert Image of product -->
+      <img src="ShoeA.jpg" style="width:450px; height:350px; float: left; margin-left: 30px;">
+          <!-- Insert Image of Goose, followed by Linking that Image to a new Webpage -->
+      <a href="https://en.wikipedia.org/wiki/Goose" target="_blank">
+        <img src="Duck.jpg" style="width: 250px; height: 250px; float: right; margin-right: 100px;">
+      </a>
+
+      <br>
+          <!-- Additional Text For Features -->
+      <p style="clear: both; font-size: 20px; line-height: 1.6;">
+        <br>Thanks to recent discoveries in stem cell research, scientist have been able to synthesize the feathers of a 
+        rare long neck goose only found in South East Africa. These feathers where genetically modified and grown in a lab resulting
+        in feathers lighter than air. This special property has brought many revolutionary inventions such as our own J-Flys. 
+        The sky is no longer the limit! 
+        <br><br>  
+        <b>Click on the goose for more information on how our feathers came to be.</b>
+        <br>
+      </p>
+
+          <!-- Give a List of Features using a list tool -->
+      <p style="font-size: 40px; text-decoration: underline;"><b>List of Features:</b></p>
+      <ul>
+        <li>20% higher jumps</li>
+        <li>Hover ability</li>
+        <li>Runing Speeds of 30mph</li>
+        <li>Gliding</li>
+        <li><b>Flight</b></li>
+      </ul>  
+
+      <br><br><br>
+
+      <!-- Establish Button to redirect to pricing and styles page -->
+      <p>Click on the red box below to see our styles and prices.</p>
+      
+        <!-- Create a reference link -->
+      <a href="StylesPricingPage.html" style="text-decoration: none;">
+          <!-- Stylize the reference link to look like a red button -->
+        <div style="font-size: 60px; color: rgb(255, 255, 255); text-shadow: 2px 2px 5px rgb(22, 22, 22); text-align: center; border: 5px solid red; 
+            background-color: red; padding: 10px; border-radius: 15px; margin-left: 160px; margin-right: 160px;">
+            <b>BY YOURS TODAY!!!</b>
+        </div>
+      </a>
+
+
+    <!-- End of Box1 information -->
+    </div>
+
+
+    <!-- Insert Black Box (For Stylization Purposes) -->
+    <br><br>
+    <div class="black-box"></div> 
+    
+
+    <!-- END of Body -->
+    </body>
+
+
+
+
+  <!-- SCRIPTS USED----------------------------------------------------------------------------------------------------------------->
+
+  <!-- Script for Displaying Images for Slide -->
+  <script>
+  let slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3500);                     // Set image to change every 3.5 seconds
+  }
+
+  </script>
+
+</html>
